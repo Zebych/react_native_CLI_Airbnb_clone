@@ -1,0 +1,17 @@
+! навигация!
+ yarn add @react-navigation/native @react-navigation/bottom-tabs @react-navigation/stack
+ yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-
+safe-area-context @react-native-community/masked-view
+! навигация!
+
+import 'react-native-gesture-handler';-импортировать вверху App собственный обработчик жестов
+
+!верхняя панель навигации!
+yarn add @react-navigation/material-top-tabs react-native-tab-view
+чёт отвалилось фиксил yarn add react-native-pager-view
+!верхняя панель навигации!
+
+!Либа автозаполнения!
+yarn add react-native-google-places-autocomplete
+!Либа автозаполнения!
+

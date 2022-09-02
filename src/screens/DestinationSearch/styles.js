@@ -4,37 +4,24 @@ const styles = StyleSheet.create({
   container: {
     margin: 20,
   },
-  image: {
-    width: '100%',
-    aspectRatio: 3 / 2,
-    resizeMode: 'cover',
+  textInput: {
+    fontSize: 18,
+    marginBottom: 20,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderColor: 'lightgrey',
+  },
+  iconContainer: {
+    backgroundColor: '#e7dede',
+    padding: 7,
     borderRadius: 10,
+    marginRight: 15,
   },
-  bedrooms: {
-    marginVertical: 10,
-    color: '#5b5b5b',
-  },
-  descriptions: {
-    fontSize: 18,
-    lineHeight: 26,
-    color: '#090808',
-  },
-  prices: {
-    fontSize: 18,
-    marginVertical: 5,
-    color: '#090808',
-  },
-  oldPrice: {
-    color: '#5b5b5b',
-    textDecorationLine: 'line-through',
-  },
-  price: {
-    fontWeight: 'bold',
-  },
-  totalPrice: {
-    color: '#5b5b5b',
-    textDecorationLine: 'underline',
-  },
+  locationText: {},
 });
 
 export default styles;

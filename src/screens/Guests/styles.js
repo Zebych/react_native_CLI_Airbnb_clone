@@ -2,26 +2,22 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    margin: 20,
+    justifyContent: 'space-between',
+    height: '100%',
   },
-  textInput: {
-    fontSize: 18,
+  pressBlock: {
     marginBottom: 20,
-  },
-  row: {
-    flexDirection: 'row',
+    backgroundColor: '#f15454',
     alignItems: 'center',
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderColor: 'lightgrey',
-  },
-  iconContainer: {
-    backgroundColor: '#e7dede',
-    padding: 7,
+    justifyContent: 'center',
+    height: 50,
+    marginHorizontal: 20,
     borderRadius: 10,
-    marginRight: 15,
   },
-  locationText: {},
+  pressBlockText: {
+    fontSize: 20,
+    color: '#fff',
+  },
 });
 
 export default styles;
