@@ -35,7 +35,7 @@ const Post = ({post}) => {
       <Text style={styles.prices}>
         <Text style={styles.oldPrice}>${oldPrice} </Text>
         <Text style={styles.price}> ${newPrice}</Text>
-        /text
+        /night
       </Text>
 
       <Text style={styles.totalPrice}>${totalPrice} total</Text>

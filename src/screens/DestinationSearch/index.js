@@ -1,13 +1,11 @@
 import React, {useState} from 'react';
-import {FlatList, Pressable, Text, TextInput, View} from 'react-native';
+import {FlatList, TextInput, View} from 'react-native';
 import styles from './styles.js';
 import searchResults from '../../../assets/data/search';
-import Entypo from 'react-native-vector-icons/Entypo';
-import {useNavigation} from '@react-navigation/native';
+import SuggestionRow from './SuggestionRow';
 
 const DestinationSearchScreen = () => {
   const [inputText, setInputText] = useState('');
-  const navigate = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -21,16 +19,7 @@ const DestinationSearchScreen = () => {
       <FlatList
         data={searchResults}
         renderItem={({item}) => {
-          return (
-            <Pressable
-              onPress={() => navigate.navigate('Guests')}
-              style={styles.row}>
-              <View style={styles.iconContainer}>
-                <Entypo name={'location-pin'} size={30} />
-              </View>
-              <Text style={styles.locationText}>{item.description}</Text>
-            </Pressable>
-          );
+          return <SuggestionRow description={item.description} />;
         }}
       />
     </View>
