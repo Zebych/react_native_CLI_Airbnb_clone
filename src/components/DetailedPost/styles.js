@@ -2,27 +2,16 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    overflow: 'hidden',
-    height: 120,
-    marginTop: 20,
-    // marginLeft: 5,
-    marginRight: 5,
-    // marginBottom: 20,
-    flexDirection: 'row',
-    borderRadius: 10,
+    margin: 20,
   },
   image: {
-    height: '100%',
-    aspectRatio: 1,
+    width: '100%',
+    aspectRatio: 3 / 2,
     resizeMode: 'cover',
-  },
-  postDescription: {
-    paddingVertical: 5,
-    backgroundColor: '#fff',
-    paddingLeft: 10,
-    flex: 1,
+    borderRadius: 10,
   },
   bedrooms: {
+    marginVertical: 10,
     color: '#5b5b5b',
   },
   descriptions: {
@@ -32,10 +21,24 @@ const styles = StyleSheet.create({
   },
   prices: {
     fontSize: 18,
+    marginVertical: 5,
     color: '#090808',
+  },
+  oldPrice: {
+    color: '#5b5b5b',
+    textDecorationLine: 'line-through',
   },
   price: {
     fontWeight: 'bold',
+  },
+  totalPrice: {
+    color: '#5b5b5b',
+    textDecorationLine: 'underline',
+  },
+  longDescriptions: {
+    marginVertical: 20,
+    fontSize: 16,
+    lineHeight: 24,
   },
 });
 

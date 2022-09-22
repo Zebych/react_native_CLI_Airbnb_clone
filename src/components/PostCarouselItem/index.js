@@ -1,13 +1,22 @@
 import React from 'react';
-import {Text, View, Image, useWindowDimensions} from 'react-native';
+import {Text, View, Image, useWindowDimensions, Pressable} from 'react-native';
 import styles from './styles';
+import {useNavigation} from '@react-navigation/native';
 
 const PostCarouselItem = ({post}) => {
-  const {image, bed, bedroom, type, title, newPrice, description} = post;
+  const {image, bed, bedroom, type, title, newPrice, description, id} = post;
   const width = useWindowDimensions();
 
+  const navigation = useNavigation();
+
+  const goToPostPage = () => {
+    navigation.navigate('Post', {postId: id});
+  };
+
   return (
-    <View style={[{width: width.width - 100}, styles.container]}>
+    <Pressable
+      onPress={goToPostPage}
+      style={[{width: width.width - 40}, styles.container]}>
       <Image
         style={styles.image}
         source={{
@@ -29,7 +38,7 @@ const PostCarouselItem = ({post}) => {
           /night
         </Text>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
